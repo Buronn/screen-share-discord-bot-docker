@@ -1,0 +1,32 @@
+{
+  "name": "discordstream",
+  "version": "1.0.0",
+  "description": "🔴 This is the main repository and it is visible in commits, I made it private by accident, This is why this repo has less star and fork compared to other identical repositories.",
+  "main": "main.js",
+  "bin": {
+    "DiscordStream": "main.js"
+  },
+  "scripts": {
+    "start": "node main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.6.4",
+    "dotenv": "^10.0.0",
+    "selenium-webdriver": "^4.1.0",
+    "youtube-dl-wrap": "^2.1.0"
+  },
+  "devDependencies": {
+    "chromedriver": "^96.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MainSilent/Discord-Screenshare.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MainSilent/Discord-Screenshare/issues"
+  },
+  "homepage": "https://github.com/MainSilent/Discord-Screenshare#readme"
+}
