@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:17.2.0
 ARG DEBIAN_FRONTEND=noninteractive
 WORKDIR /app
 COPY package.json .
@@ -12,6 +12,7 @@ RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/yout
 RUN apt update && apt install python3 -y && apt install python3-pip -y
 # Install package.json dependencies
 RUN npm i
+RUN npm install dotenv
 RUN whereis python && ln -s /usr/bin/python3 /usr/bin/python
 #Prevents docker from removing the container
 CMD ["npm", "start"]
