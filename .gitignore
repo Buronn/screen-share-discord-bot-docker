@@ -1,7 +1,8 @@
-.env
+
 node_modules
 __pycache__
 client/tmp/*
 !client/tmp/empty
 token.txt
+.env
 
