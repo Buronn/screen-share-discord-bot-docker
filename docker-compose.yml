@@ -7,7 +7,6 @@ services:
       - .:/app
     environment:
       - DISPLAY=host.docker.internal:0.0
-      - token=${TOKEN}
       - owner_id=307265070289911819
       - log_channel_id=827345968663887882
     ports:
