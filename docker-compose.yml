@@ -9,5 +9,6 @@ services:
       - DISPLAY=host.docker.internal:0.0
       - owner_id=307265070289911819
       - log_channel_id=827345968663887882
+      - NODE_ENV=development
     ports:
       - "8080:8080"

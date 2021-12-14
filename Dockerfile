@@ -11,8 +11,8 @@ RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/yout
 # Install python3
 RUN apt update && apt install python3 -y && apt install python3-pip -y
 # Install package.json dependencies
-RUN npm i
-RUN npm install dotenv
+RUN npm install dotenv@latest && npm install
+# Python in correct path
 RUN whereis python && ln -s /usr/bin/python3 /usr/bin/python
 #Prevents docker from removing the container
-CMD ["npm", "start"]
+CMD ["tail", "-f", "/dev/null"]
